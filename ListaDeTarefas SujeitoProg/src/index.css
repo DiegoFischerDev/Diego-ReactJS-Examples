@@ -1,0 +1,182 @@
+/* ************************ ROOT ***************************** */
+
+:root {
+  --dark: #15171a;
+  --light-dark: #282b30;
+  --yellow: #ffcc23;
+  --white: #FFF;
+  --grey: #b4b8bb;
+  --button-blue: #3366ff;
+  --light-red: rgb(184, 52, 52);
+
+
+
+  font-family: sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  width: 100%;
+}
+
+.shadown {
+  -webkit-box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.33);
+  box-shadow: 5px 5px 16px 5px rgba(0, 0, 0, 0.33);
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  button {
+    opacity: 1; /* Por Causa do Toutch */
+  }
+}
+
+.blur {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+/********************************* Home  ******************************************/
+
+.home-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-container h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.home-container span {
+  margin-bottom: 28px;
+}
+
+.form {
+  width: 90%;
+  max-width: 600px;
+}
+
+.form textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 12px;
+  border: 0;
+  height: 90px;
+  resize: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.form input {
+  width: 100%;
+  border: 0;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.form button {
+  width: 100%;
+  border: 0;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  padding: 0 8px;
+  background-color: var(--button-blue);
+  color: var(--white);
+}
+
+.home-container .button-link {
+  color: var(--grey);
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+
+/********************************* Admin  ****************************/
+
+.admin-container {
+  margin-top: 40px;
+}
+
+.admin-container h1 {
+  margin-bottom: 40px;
+}
+
+.btn-register {
+  margin-bottom: 28px;
+}
+
+.list {
+  width: 90%;
+  max-width: 600px;
+  background-color: var(--light-dark);
+  border-radius: 4px;
+  margin-bottom: 12px;
+  padding: 14px 8px;
+  align-items: start;
+}
+
+.list p {
+  margin-bottom: 8px;
+}
+
+.list button {
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.btn-delete {
+  color: var(--yellow);
+  background-color: transparent;
+}
+
+.btn-logout {
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--light-red);
+  color: var(--white);
+  font-size: 15px;
+}

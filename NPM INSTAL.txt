@@ -8,6 +8,7 @@ npm install react-toastify  --> PoP UP
 
 npm install --save styled-components
 
+npm install firebase
 
 
 ************ build *******
